@@ -1,0 +1,207 @@
+.catering {
+  text-align: center;
+  width: 100%;
+  height: 100%;
+}
+
+.catering .catering-desc {
+  padding: 0 4rem 2rem 4rem;
+}
+
+.catering .catering-heading {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.catering .catering-text {
+  text-align: justify;
+  padding: 0 5rem;
+  font-size: 18px;
+}
+
+.catering .btn-catering {
+  background-color: #9da52d;
+  margin-top: 1.5rem;
+}
+
+.catering .btn-catering:hover {
+  background-color: #e0ee19;
+  color: #000;
+}
+
+.benefits {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+
+.benefits .img-benefits {
+  width: 100%;
+  height: 70vh;
+  background-size: cover;
+  object-fit: cover;
+  filter: contrast(1) brightness(0.5) opacity(1.2);
+}
+
+.benefits .desc-benefits {
+  position: absolute;
+  top: 5%;
+  left: 0;
+  right: 0;
+  text-align: center;
+  margin: auto;
+  font-size: 3rem;
+  color: #fff;
+  font-weight: bold;
+}
+
+.icon-benefits {
+  display: flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  width: 100%;
+}
+
+.catering .benefits .icon-benefits-atas {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  left: 50%;
+  right: 50%;
+  /* left: 0; */
+  top: 25%;
+  transform: translate(-50%, 0);
+  width: max-content;
+}
+.catering .benefits .icon-benefits-bawah {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  left: 50%;
+  right: 50%;
+  /* left: 0; */
+  top: 60%;
+  transform: translate(-50%, 0);
+  width: max-content;
+}
+
+.bullets-icon-1,
+.bullets-icon-2,
+.bullets-icon-3,
+.bullets-icon-4,
+.bullets-icon-5 {
+  margin: 0 6rem;
+  max-width: 100px;
+}
+
+.icon-produk {
+  height: auto;
+  width: 90px;
+}
+
+@keyframes icon-produk {
+  25% {
+    transform: scale(1.1);
+  }
+  75% {
+    transform: scale(0.9);
+  }
+}
+
+.icon-produk:active,
+.icon-produk:focus,
+.icon-produk:hover {
+  background: #9da52d;
+  border-radius: 100%;
+  box-shadow: 3px 2px 3px -3px #ff551c;
+  animation-name: icon-produk;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+.text-icon-benefits {
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  font-size: 15px;
+  width: 250px;
+  margin: 0 -75px;
+}
+
+@media screen and (max-width: 884px) {
+  .catering .catering-desc {
+    padding: 0 1rem 3rem 2rem;
+  }
+  .icon-produk {
+    width: 100px;
+  }
+  .benefits .img-benefits {
+    height: 40vh;
+  }
+  .icon-produk {
+    width: 75px;
+  }
+  .bullets-icon-1,
+  .bullets-icon-2,
+  .bullets-icon-3,
+  .bullets-icon-4,
+  .bullets-icon-5 {
+    margin: 0 4.5rem;
+  }
+  .text-icon-benefits {
+    font-size: 12px;
+    width: 200px;
+    margin: 0 -60px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .catering .catering-text {
+    padding: 0 2rem;
+    font-size: 15px;
+  }
+  .benefits .desc-benefits {
+    text-align: center;
+    font-size: 1.8rem;
+  }
+
+  .catering .bullets-icon-1,
+  .bullets-icon-2,
+  .bullets-icon-3 {
+    margin: 0 2rem;
+  }
+
+  .icon-produk {
+    width: 100px;
+  }
+}
+
+@media screen and (max-width: 428px) {
+  .benefits .img-benefits {
+    height: 35vh;
+  }
+  .catering .benefits .icon-benefits-atas {
+    position: absolute;
+    top: 25%;
+  }
+  .catering .benefits .icon-benefits-bawah {
+    position: absolute;
+    top: 60%;
+  }
+  .icon-produk {
+    width: 50px;
+  }
+  .bullets-icon-1,
+  .bullets-icon-2,
+  .bullets-icon-3,
+  .bullets-icon-4,
+  .bullets-icon-5 {
+    margin: 0 2rem;
+  }
+  .text-icon-benefits {
+    font-size: 10px;
+    width: 110px;
+    margin: 0 -30px;
+  }
+}

@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css2?family=Hammersmith+One&family=Open+Sans&display=swap");
+
+/* .title-product {
+    margin-top: 3rem;
+  } */
+
+.underline-product {
+  height: 0.2rem;
+  width: 7rem;
+  background: #f86f43;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.underline-freshveggy {
+  height: 0.2rem;
+  width: 18rem;
+  background: #f86f43;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+}
+
+.title-product .desc-product {
+  text-align: center;
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.swiper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  margin: 1rem 0;
+  padding: 1rem 0;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px 10px 0 0;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: #000;
+  width: 5%;
+}
+
+.card-product {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  width: 60%;
+  border-radius: 10px;
+}
+
+.card-product:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.5);
+}
+
+.container-product h4 {
+  padding: 8px 16px;
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+.container-product p {
+  padding: 10px 10px;
+  margin-bottom: 1rem;
+  font-size: 13px;
+}
+
+.container-product .btn-product {
+  margin-bottom: 1.2rem;
+  background-color: #9da52d;
+}
+
+.container-product .btn-product:hover {
+  background-color: #e0ee19;
+  color: #000;
+}
+
+@media screen and (max-width: 428px) {
+  .title-product .desc-product {
+    padding: 0 1rem;
+  }
+}

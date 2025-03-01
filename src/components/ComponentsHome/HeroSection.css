@@ -1,0 +1,291 @@
+.hero {
+  height: 100%;
+  width: 100%;
+}
+
+.img-hero {
+  height: 50vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.img-hero::after {
+  content: "";
+  width: 100%;
+  /* height: 100%; */
+  position: relative;
+  top: 0;
+  left: 0;
+  background: #2e2424;
+  filter: contrast(1.35) brightness(0.65) opacity(0.5);
+}
+
+.into-img {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  object-fit: cover;
+  background: #1f1d1d;
+  /* filter: contrast(0.4) brightness(1) opacity(1); */
+}
+
+.desc .desc-heading {
+  margin-top: 4rem;
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.desc .desc-text {
+  text-align: justify;
+  /* padding: 2rem 15rem; */
+  margin: 2rem 10rem;
+  font-size: 17px;
+  line-height: 30px;
+  font-weight: 400;
+}
+
+.img-2 {
+  width: 100%;
+  /* height: 80vh; */
+  position: relative;
+  overflow: hidden;
+  margin: 3rem 0;
+}
+
+.into-img2 {
+  width: 100%;
+  height: 80vh;
+  background-size: cover;
+  object-fit: cover;
+  filter: contrast(0.6) brightness(0.5) opacity(3);
+}
+.hero .img-2 .home-icon {
+  display: flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  width: 100%;
+}
+
+.hero .img-2 .home-icon .icon-home-atas {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  left: 50%;
+  right: 50%;
+  transform: translate(-50%, 0);
+  top: 30%;
+  width: max-content;
+}
+.hero .img-2 .home-icon .icon-home-bawah {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  left: 50%;
+  right: 50%;
+  transform: translate(-50%, 0);
+  top: 65%;
+  width: max-content;
+}
+
+.home-icon-1,
+.home-icon-2,
+.home-icon-3,
+.home-icon-4,
+.home-icon-5 {
+  margin: 0 5rem;
+  max-width: 100px;
+}
+
+.text-icon {
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  font-size: 15px;
+}
+.para-3 {
+  width: 80px;
+}
+
+.para-4,
+.para-5 {
+  width: 200px;
+  margin: 0 -55px;
+}
+
+@keyframes icon-home {
+  25% {
+    transform: scale(1.1);
+  }
+  75% {
+    transform: scale(0.9);
+  }
+}
+
+.icon-home:active,
+.icon-home:focus,
+.icon-home:hover {
+  background: #9da52d;
+  border-radius: 100%;
+  box-shadow: 3px 2px 3px -3px;
+  animation-name: icon-home;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+.icon-home-atas .icon-home,
+.icon-home-bawah .icon-home {
+  height: auto;
+  width: 90px;
+}
+
+.hero .title-hero {
+  position: absolute;
+  top: 5%;
+  left: 0;
+  right: 0;
+  text-align: center;
+  margin: auto;
+  font-size: 3rem;
+  color: #fff;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 884px) {
+  .img-hero {
+    height: 100%;
+  }
+  .into-img2 {
+    height: 60vh;
+  }
+  .desc .desc-text {
+    margin: 2rem 5rem;
+  }
+  .home-icon-1,
+  .home-icon-2,
+  .home-icon-3,
+  .home-icon-4,
+  .home-icon-5 {
+    margin: 0 5rem;
+  }
+  .desc .desc-heading {
+    font-size: 20px;
+  }
+  .desc .desc-text {
+    font-size: 16px;
+    margin: 2rem 3rem;
+  }
+  .hero .img-2 .into-img2 {
+    height: 50vh;
+  }
+  .hero .title-hero {
+    position: absolute;
+    top: 10%;
+    left: 0;
+    right: 0;
+    font-size: 2.2rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .home-icon-1,
+  .home-icon-2,
+  .home-icon-3,
+  .home-icon-4,
+  .home-icon-5 {
+    width: 80px;
+  }
+  .hero .img-2 .home-icon .icon-home-atas {
+    position: absolute;
+    top: 38%;
+  }
+  .hero .img-2 .home-icon .icon-home-bawah {
+    position: absolute;
+    top: 68%;
+  }
+  .hero .title-hero {
+    position: absolute;
+    top: 13%;
+    left: 0;
+    right: 0;
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 428px) {
+  .home-icon-1,
+  .home-icon-2,
+  .home-icon-3,
+  .home-icon-4,
+  .home-icon-5 {
+    margin: 0 2rem;
+    width: 60px;
+  }
+  .hero .LogoCover {
+    width: 150px;
+    position: absolute;
+    top: 0;
+  }
+  .hero .img-2 .into-img2 {
+    height: 40vh;
+  }
+  .hero .img-2 .home-icon .icon-home-atas {
+    position: absolute;
+    top: 32%;
+  }
+  .hero .img-2 .home-icon .icon-home-bawah {
+    position: absolute;
+    top: 68%;
+  }
+  .text-icon {
+    font-size: 10px;
+  }
+  .para-3 {
+    width: 60px;
+  }
+  .para-4,
+  .para-5 {
+    width: 200px;
+    margin: 0 -70px;
+  }
+  .hero .title-hero {
+    position: absolute;
+    top: 12%;
+    left: 0;
+    right: 0;
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .home-icon-1,
+  .home-icon-2,
+  .home-icon-3,
+  .home-icon-4,
+  .home-icon-5 {
+    margin: 0 2rem;
+    width: 50px;
+  }
+  .hero .LogoCover {
+    position: absolute;
+    top: -2%;
+  }
+  .para-1 {
+    width: 80px;
+    margin: 0 -18px;
+  }
+  .para-4,
+  .para-5 {
+    width: 200px;
+    margin: 0 -75px;
+  }
+  .hero .title-hero {
+    position: absolute;
+    top: 10%;
+    left: 0;
+    right: 0;
+    font-size: 15px;
+  }
+}

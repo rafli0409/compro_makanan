@@ -1,0 +1,106 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.herosectionservice {
+  margin: 1.5rem 0;
+}
+
+.herosectionservice .heading-education,
+.herosectionservice .heading-consul,
+.herosectionservice .heading-pelatihan {
+  font-size: 40px;
+  padding-bottom: 1rem;
+}
+
+.herosectionservice p {
+  font-size: 20px;
+  text-align: justify;
+}
+
+.herosectionservice .education,
+.herosectionservice .consul,
+.herosectionservice .pelatihan {
+  text-align: center;
+  margin: 0 4rem;
+  padding: 2rem 0;
+}
+
+.herosectionservice .consul .button-service,
+.herosectionservice .pelatihan .button-service {
+  margin-top: 1.5rem;
+  background-color: #9da52d;
+  font-size: 14px;
+}
+
+.herosectionservice .consul .button-service:hover,
+.herosectionservice .pelatihan .button-service:hover {
+  background-color: #eafa05;
+  color: #000;
+}
+
+.cover-service {
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 5rem;
+}
+
+.cover-service img {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  object-fit: cover;
+  background: #1f1d1d;
+  filter: contrast(1.35) brightness(0.65) opacity(0.8);
+}
+
+.herosectionservice .heading-profile {
+  font-size: 40px;
+  text-align: center;
+}
+
+.underline-3 {
+  height: 0.25rem;
+  width: 19rem;
+  background: #f86f43;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 428px) {
+  .herosectionservice .heading-education,
+  .herosectionservice .heading-consul,
+  .herosectionservice .heading-pelatihan,
+  .herosectionservice .heading-profile {
+    font-size: 30px;
+  }
+  .herosectionservice p {
+    font-size: 17px;
+  }
+  .underline-3 {
+    width: 13rem;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .herosectionservice .education,
+  .herosectionservice .consul,
+  .herosectionservice .pelatihan {
+    text-align: center;
+    margin: 0 2rem;
+    padding: 2rem 0;
+  }
+  .herosectionservice .heading-education,
+  .herosectionservice .heading-consul,
+  .herosectionservice .heading-pelatihan,
+  .herosectionservice .heading-profile {
+    font-size: 25px;
+  }
+  .herosectionservice p {
+    font-size: 15px;
+  }
+  .underline-3 {
+    width: 10rem;
+  }
+}

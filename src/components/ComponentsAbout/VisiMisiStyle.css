@@ -1,0 +1,56 @@
+.bg-visimisi {
+  background: #9da52d;
+  height: 400px auto;
+  width: 100%;
+}
+
+.visimisi {
+  display: grid;
+  grid-template-columns: auto auto;
+  column-gap: 5rem;
+  justify-content: center;
+  padding: 2rem 3rem;
+}
+
+.visi h2,
+.visi .text-visi,
+.misi h2,
+.misi .text-misi {
+  color: white;
+  text-align: justify;
+}
+
+.visi h2,
+.misi h2 {
+  font-size: 50px;
+  margin-bottom: 2rem;
+}
+
+.visi .text-visi,
+.misi .text-misi {
+  font-size: 16px;
+}
+
+@media screen and (max-width: 834px) {
+  .visimisi {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .visi h2,
+  .visi .text-visi,
+  .misi h2,
+  .misi .text-misi {
+    margin: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 428px) {
+  .visimisi {
+    padding: 2rem;
+  }
+  .visi h2,
+  .misi h2 {
+    text-align: center;
+  }
+}

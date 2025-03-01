@@ -1,0 +1,47 @@
+.text-instagram:hover {
+  color: #e1306c;
+}
+
+.text-youtube:hover {
+  color: #ff0000;
+}
+
+.text-linked:hover {
+  color: #0077b5;
+}
+
+.text-reset {
+  position: relative;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.text-reset::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #ffff00;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.text-reset:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+@media screen and (max-width: 884px) {
+  .produk {
+    display: none;
+  }
+  .text-center {
+    font-size: 15px;
+  }
+  .footer-logo {
+    width: 180px;
+  }
+}
